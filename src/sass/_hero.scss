@@ -1,7 +1,25 @@
 .hero {
-  background-color: grey;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/hero1@1X.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../images/hero@1X.jpeg);
-  opacity: 1;
+  opacity: 0.5;
+  min-height: 170px;
+  filter: grayscale(100%);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../images/hero1@2X.png);
+    }
+  }
+  @media screen and (min-width: 480px) {
+    min-height: 250px;
+  }
+
+  @media screen and (min-width: 780px) {
+    min-height: 400px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-height: 600px;
+  }
 }
