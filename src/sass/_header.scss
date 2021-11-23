@@ -77,8 +77,11 @@
 }
 
 .logo {
-  margin-left: 45px;
+  margin-left: 10px;
   margin-right: 250px;
   display: block;
   text-decoration: none;
+  @media (min-width: 1280px) {
+    margin-left: 40px;
+  }
 }
