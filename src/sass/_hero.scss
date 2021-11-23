@@ -1,12 +1,12 @@
-.hero {
-  margin-left: auto;
-  margin-right: auto;
+.hero__picture {
   background-image: url(../images/hero1@1X.png);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.5;
+  opacity: 0.3;
   min-height: 170px;
   filter: grayscale(100%);
+  z-index: -1;
+
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
       background-image: url(../images/hero1@2X.png);
@@ -21,5 +21,73 @@
   }
   @media screen and (min-width: 1200px) {
     min-height: 600px;
+  }
+}
+.hero__title {
+  position: absolute;
+  z-index: 100;
+  top: 10px;
+  left: 10px;
+  right: 0;
+  bottom: 0;
+  font-family: 'Open Sans';
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #000000;
+  @media screen and (min-width: 480px) {
+    top: 20px;
+    left: 60px;
+    font-size: 28px;
+  }
+
+  @media screen and (min-width: 780px) {
+    font-size: 38px;
+    top: 70px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 48px;
+    top: 99px;
+    left: 211px;
+  }
+}
+.hero {
+  position: relative;
+}
+
+.hero__button {
+  position: absolute;
+  text: Více o nás;
+  font-family: 'Open Sans';
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #e84d0f;
+  left: 40%;
+
+  bottom: 10%;
+  width: 100px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #e84d0f;
+  border-radius: 35px;
+  @media screen and (min-width: 480px) {
+    width: 150px;
+  }
+  @media screen and (min-width: 780px) {
+    width: 200px;
+    height: 35px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #e84d0f;
+    left: 900px;
+    right: 50px;
+    bottom: 200px;
+    width: 237px;
+    height: 46px;
   }
 }
