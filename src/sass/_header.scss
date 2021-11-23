@@ -21,13 +21,13 @@
     fill: orange;
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1200px) {
     display: none;
   }
 }
 
 .site-nav {
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 
@@ -77,11 +77,24 @@
 }
 
 .logo {
-  margin-left: 10px;
+  margin-left: 45px;
   margin-right: 250px;
   display: block;
   text-decoration: none;
-  @media (min-width: 1280px) {
-    margin-left: 40px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 28px;
+  padding-bottom: 28px;
+
+  @media (min-width: 767px) {
+    justify-content: flex-start;
+  }
+
+  @media (min-width: 1199px) {
+    justify-content: space-between;
   }
 }
