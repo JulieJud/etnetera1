@@ -13,7 +13,7 @@
   background-color: #e84e0e;
   @media screen and (min-width: 480px) {
     font-size: 12px;
-    padding: 18px 10px;
+    padding: 18px 20px;
   }
   @media screen and (min-width: 780px) {
     font-size: 12px;
@@ -26,8 +26,10 @@
   &__title {
     font-weight: normal;
     font-size: 10px;
+    padding: 0px 15px;
     @media screen and (min-width: 780px) {
-      font-size: 12px;
+      font-size: 14px;
+      padding: 0px 100px;
     }
     @media screen and (min-width: 1200px) {
       font-size: 15px;
@@ -37,10 +39,19 @@
 
   &__time {
     text-transform: uppercase;
-    min-width: 100px;
+    padding: 0px 15px;
+
+    @media screen and (min-width: 480px) {
+      font-size: 12px;
+      margin-right: 25px;
+    }
   }
   &__link {
+    padding: 0px 15px;
     text-decoration: none;
     color: #ffffff;
+  }
+  @media screen and (min-width: 780px) {
+    font-size: 14px;
   }
 }
