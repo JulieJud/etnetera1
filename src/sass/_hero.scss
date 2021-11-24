@@ -58,7 +58,7 @@
 
 .hero__button {
   position: absolute;
-  text: Více o nás;
+
   font-family: 'Open Sans';
   font-size: 12px;
   line-height: 1.2;
@@ -90,4 +90,26 @@
     width: 237px;
     height: 46px;
   }
+}
+.embla {
+  overflow: hidden;
+  position: absolute;
+  top: 217px;
+  left: 209px;
+  right: 503px;
+  z-index: 100;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  position: relative;
+  flex: 0 0 100%;
+}
+.embla__text {
+  font-family: 'Myriad Pro';
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #262626;
 }
