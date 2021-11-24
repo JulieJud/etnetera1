@@ -1,7 +1,26 @@
 .about {
   padding: 40px 10px;
 }
+.about__text {
+}
 .about__image {
   float: left;
   margin: 0px 24px 28px 0;
+}
+.myButton {
+  position: relative;
+  padding-bottom: 4px;
+}
+.myButton::after {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  content: '......................';
+  color: orange;
+  width: 100%;
+  display: block;
+  //background-color: orange;
+  height: 1px;
+
+  border-radius: 2px;
 }
