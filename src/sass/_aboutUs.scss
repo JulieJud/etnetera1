@@ -46,7 +46,7 @@
     color: orange;
   }
 }
-.myButton {
+/*.myButton {
   position: relative;
   padding-bottom: 4px;
   cursor: pointer;
@@ -63,4 +63,8 @@
   height: 1px;
 
   border-radius: 2px;
+}
+*/
+.myButton {
+  border-bottom: 1px dashed orange;
 }

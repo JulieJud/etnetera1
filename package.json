@@ -6,7 +6,7 @@
   "homepage": "https://JulieJud.github.io/etnetera1",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /etnetera1/"
+    "build": "parcel build src/*.html --public-url/etnetera1/"
   },
   "repository": {
     "type": "git",
