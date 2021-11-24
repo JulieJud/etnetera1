@@ -1,0 +1,46 @@
+.news {
+  display: flex;
+  padding: 18px 5px;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Open Sans';
+  font-size: 10px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-weight: normal;
+  letter-spacing: 0.005em;
+  color: #ffffff;
+  background-color: #e84e0e;
+  @media screen and (min-width: 480px) {
+    font-size: 12px;
+    padding: 18px 10px;
+  }
+  @media screen and (min-width: 780px) {
+    font-size: 12px;
+    padding: 18px 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 15px;
+    padding: 18px 200px;
+  }
+  &__title {
+    font-weight: normal;
+    font-size: 10px;
+    @media screen and (min-width: 780px) {
+      font-size: 12px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 15px;
+      padding: 0px 100px;
+    }
+  }
+
+  &__time {
+    text-transform: uppercase;
+    min-width: 100px;
+  }
+  &__link {
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
