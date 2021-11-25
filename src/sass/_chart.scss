@@ -39,10 +39,16 @@
   @media screen and (min-width: 280px) {
     padding-left: 20px;
     font-size: 18px;
-    line-height: 1.2;
+    line-height: 1;
   }
   @media screen and (min-width: 480px) {
     padding-left: 50px;
+    font-size: 21px;
+    line-height: 1.2;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 21px;
+    line-height: 1.2;
   }
 }
 

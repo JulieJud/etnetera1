@@ -190,6 +190,9 @@ var myBar = new Chart(ctx, {
     ],
   },
   options: {
+    tooltips: {
+      enabled: false,
+    },
     responsive: true,
     barRoundness: 1,
     scales: {
