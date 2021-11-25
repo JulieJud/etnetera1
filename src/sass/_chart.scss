@@ -2,6 +2,11 @@
   background-color: lightgray;
   padding-left: 200px;
   padding-right: 200px;
+  background-image: url('../images/svg/logoInGraf.svg'), url('../images/svg/nozki.svg');
+  background-repeat: no-repeat;
+  background-position: 140px 40px, 141px 68px;
+  background-size: auto, 20px 30px;
+
   &__title {
     font-size: 21px;
     line-height: 1.2;
