@@ -196,10 +196,11 @@ var myBar = new Chart(ctx, {
       xAxes: [
         {
           ticks: {
-            stepSize: 10,
+            stepSize: 15,
+            fontSize: 12,
           },
-          barPercentage: 0.5,
-          categoryPercentage: 2,
+          barPercentage: 0.7,
+          categoryPercentage: 1.5,
           gridLines: {
             drawOnChartArea: false,
           },
@@ -209,7 +210,7 @@ var myBar = new Chart(ctx, {
         {
           ticks: {
             min: 0,
-            max: 100,
+            max: 150,
             stepSize: 1,
           },
           display: false,

@@ -1,9 +1,7 @@
 .chart {
-  position: relative;
   background-color: #f2f2f2;
-  padding-left: 5px;
-  padding-right: 10px;
-
+  padding: 5px;
+  display: done;
   @media screen and (min-width: 480px) {
     padding-left: 20px;
     padding-right: 20px;
@@ -13,17 +11,38 @@
     padding-right: 40px;
   }
   @media screen and (min-width: 1200px) {
+  }
+}
+.chart__canvas {
+  margin-bottom: 0px;
+  margin-top: 10px;
+  @media screen and (min-width: 480px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media screen and (min-width: 780px) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  @media screen and (min-width: 1200px) {
     padding-left: 200px;
     padding-right: 200px;
   }
-
-  &__title {
+}
+.chart__title {
+  padding-left: 200px;
+  margin-bottom: 30px;
+  font-size: 21px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #000000;
+  @media screen and (min-width: 280px) {
     padding-left: 20px;
-    margin-bottom: 30px;
-    font-size: 21px;
+    font-size: 18px;
     line-height: 1.2;
-    font-weight: 500;
-    color: #000000;
+  }
+  @media screen and (min-width: 480px) {
+    padding-left: 50px;
   }
 }
 
@@ -44,18 +63,37 @@
 
 .chart__label {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
   font-family: 'Open Sans';
-  font-size: 13px;
-  line-height: 1.2;
+  font-size: 8px;
+  line-height: 1;
   font-weight: 400;
   color: #000000;
   margin-top: 15px;
-  @media screen and (max-width: 480px) {
+  font-size: 10px;
+  line-height: 1;
+  @media screen and (min-width: 480px) {
+    flex-wrap: wrap;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 9px;
+    line-height: 1;
+  }
+  @media screen and (min-width: 780px) {
+    padding-left: 150px;
+    padding-right: 150px;
     font-size: 10px;
     line-height: 1;
-    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: 13px;
+    line-height: 1.2;
   }
 }
 
