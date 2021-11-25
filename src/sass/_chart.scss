@@ -1,16 +1,82 @@
 .chart {
-  background-color: lightgray;
-  padding-left: 200px;
-  padding-right: 200px;
-  background-image: url('../images/svg/logoInGraf.svg'), url('../images/svg/nozki.svg');
+  background-color: #f2f2f2;
+  position: relative;
+  padding: 5px;
+  background-image: url('../images/svg/logoInGraf.svg');
   background-repeat: no-repeat;
-  background-position: 140px 40px, 141px 68px;
-  background-size: auto, 20px 30px;
+  background-position: 5% 50%;
+  background-size: 20px 30px;
+  @media screen and (min-width: 480px) {
+    padding-left: 200px;
+    padding-right: 200px;
+    background-position: 178px 52.5px;
+    background-size: auto, 20px 30px;
+  }
+  @media screen and (min-width: 400px) {
+    align-items: center;
+    font-size: 14.3px;
+  }
+  @media screen and (min-width: 780px) {
+    font-size: 15.2px;
+  }
 
   &__title {
+    padding-left: 20px;
+    margin-bottom: 30px;
     font-size: 21px;
     line-height: 1.2;
     font-weight: 500;
     color: #000000;
   }
+}
+.clock {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 5%;
+  width: 15px;
+  @media screen and (min-width: 480px) {
+    display: block;
+  }
+  @media screen and (min-width: 400px) {
+  }
+  @media screen and (min-width: 780px) {
+  }
+}
+
+.chart__label {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.chart__label--low::before {
+  content: '';
+  background-image: url('../images/svg/elipsa2.svg');
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+  display: inline-flex;
+  align-items: center;
+}
+.chart__label--medium::before {
+  content: '';
+  background-image: url('../images/svg/elipsa3.svg');
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+  display: inline-flex;
+  align-items: center;
+}
+.chart__label--hight::before {
+  content: '';
+  background-image: url('../images/svg/elipsa1.svg');
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+  display: inline-flex;
+  align-items: center;
 }
