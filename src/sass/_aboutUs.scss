@@ -8,8 +8,13 @@
     font-weight: 400;
     color: #000000;
     margin-bottom: 5px;
-    @media screen and (max-width: 480px) {
+    @media screen and (min-width: 280px) {
       font-size: 18px;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: 480px) {
+      font-size: 21px;
     }
   }
 

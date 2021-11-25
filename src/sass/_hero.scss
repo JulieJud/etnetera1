@@ -68,6 +68,7 @@
   background-color: #ffffff;
   border: 1px solid #e84d0f;
   border-radius: 35px;
+  z-index: 1000;
   @media screen and (min-width: 480px) {
     width: 150px;
     left: 37%;
@@ -89,7 +90,11 @@
     height: 46px;
   }
 }
-
+.hero__button:hover,
+.hero__button:focus {
+  color: white;
+  background-color: #e84d0f;
+}
 .embla__viewport {
   overflow: hidden;
   position: absolute;
