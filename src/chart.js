@@ -195,6 +195,9 @@ var myBar = new Chart(ctx, {
     scales: {
       xAxes: [
         {
+          ticks: {
+            stepSize: 10,
+          },
           barPercentage: 0.5,
           categoryPercentage: 2,
           gridLines: {
@@ -204,6 +207,11 @@ var myBar = new Chart(ctx, {
       ],
       yAxes: [
         {
+          ticks: {
+            min: 0,
+            max: 200,
+            stepSize: 1,
+          },
           display: false,
           gridLines: {
             drawOnChartArea: false,
@@ -211,6 +219,7 @@ var myBar = new Chart(ctx, {
         },
       ],
     },
+
     legend: {
       display: false,
     },
