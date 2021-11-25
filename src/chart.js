@@ -201,6 +201,9 @@ var myBar = new Chart(ctx, {
           ticks: {
             stepSize: 15,
             fontSize: 12,
+            autoSkip: false,
+            maxRotation: 90,
+            minRotation: 90,
           },
           barPercentage: 0.7,
           categoryPercentage: 1.5,
