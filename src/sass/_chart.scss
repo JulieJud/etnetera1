@@ -1,0 +1,11 @@
+.chart {
+  background-color: lightgray;
+  padding-left: 200px;
+  padding-right: 200px;
+  &__title {
+    font-size: 21px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #000000;
+  }
+}

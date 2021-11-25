@@ -195,8 +195,8 @@ var myBar = new Chart(ctx, {
     scales: {
       xAxes: [
         {
-          barPercentage: 2,
-          categoryPercentage: 0.55,
+          barPercentage: 0.5,
+          categoryPercentage: 2,
           gridLines: {
             drawOnChartArea: false,
           },
