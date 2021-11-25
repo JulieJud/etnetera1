@@ -209,7 +209,7 @@ var myBar = new Chart(ctx, {
         {
           ticks: {
             min: 0,
-            max: 200,
+            max: 100,
             stepSize: 1,
           },
           display: false,
