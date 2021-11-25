@@ -31,7 +31,6 @@
 }
 .chart__title {
   padding-left: 200px;
-
   font-size: 21px;
   line-height: 1.2;
   font-weight: 500;
@@ -52,22 +51,35 @@
     padding-left: 200px;
   }
 }
-
-/*.clock {
-  display: none;
+.chart__logo {
+  position: relative;
+}
+.chart__logo::before {
   position: absolute;
-  top: 100px;
-  left: 5%;
-  width: 15px;
+  content: '';
+  background-image: url('../images/svg/logoInGraf.svg');
+  background-repeat: no-repeat;
+  height: 0px;
+  width: 0px;
+
   @media screen and (min-width: 480px) {
-    display: block;
-  }
-  @media screen and (min-width: 400px) {
+    height: 0px;
+    width: 0px;
   }
   @media screen and (min-width: 780px) {
+    left: 6%;
+    bottom: 20%;
+    height: 50px;
+    width: 50px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 50px;
+    width: 50px;
+    left: 10%;
+    bottom: 20%;
   }
 }
-*/
+
 .chart__label {
   position: relative;
   display: flex;
@@ -186,11 +198,26 @@
 
 .chart__label::before {
   position: absolute;
+
   content: '';
   background-image: url('../images/svg/clock.svg');
   background-repeat: no-repeat;
-  height: 50px;
-  width: 50px;
-  left: 10%;
-  bottom: 0%;
+  height: 0px;
+  width: 0px;
+  @media screen and (min-width: 480px) {
+    height: 0px;
+    width: 0px;
+  }
+  @media screen and (min-width: 780px) {
+    height: 40px;
+    width: 40px;
+    left: 6%;
+    bottom: 170%;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 50px;
+    width: 50px;
+    left: 10%;
+    bottom: 150%;
+  }
 }
