@@ -1,19 +1,20 @@
 .hero {
   position: relative;
-  background-color: #a9a9a9;
-  background-image: linear-gradient(
+  background-color: #f2f2f2;
+  padding: 0;
+  /* background-image: linear-gradient(
     270deg,
-    #a9a9a9 0%,
-    #f2f2f2 10%,
+    #a9a9a9 2%,
+    #f2f2f2 8%,
     #ffffff 20%,
     #ffffff 20%,
     #ffffff 40%,
     #ffffff 60%,
     #ffffff 80%,
     #ffffff 80%,
-    #f2f2f2 90%,
-    #a9a9a9 100%
-  );
+    #f2f2f2 92%,
+    #a9a9a9 98%
+  );*/
 
   opacity: 0.8;
 }
@@ -23,7 +24,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  opacity: 0.13;
+  opacity: 0.16;
   min-height: 170px;
   filter: grayscale(100%);
 
