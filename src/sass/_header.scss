@@ -20,6 +20,9 @@
   &:focus {
     fill: var(--orange-color);
   }
+  @media (max-width: 300px) {
+    right: 2%;
+  }
 
   @media (min-width: 1200px) {
     display: none;
@@ -77,10 +80,14 @@
 }
 
 .logo {
-  margin-left: 45px;
+  padding-left: 45px;
   margin-right: 230px;
   display: block;
   text-decoration: none;
+  @media (max-width: 300px) {
+    padding-left: 10px;
+    margin: 0;
+  }
 }
 
 .header__container {
