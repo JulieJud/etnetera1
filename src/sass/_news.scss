@@ -3,14 +3,13 @@
   padding: 18px 5px;
   justify-content: space-around;
   align-items: center;
-  font-family: 'Open Sans';
   font-size: 10px;
   line-height: 1.2;
   font-weight: 400;
   font-weight: normal;
   letter-spacing: 0.005em;
-  color: #ffffff;
-  background-color: #e84e0e;
+  color: var(--white-color);
+  background-color: var(--orange-color);
   @media screen and (min-width: 480px) {
     font-size: 12px;
     padding: 18px 20px;
@@ -49,7 +48,7 @@
   &__link {
     padding: 0px 15px;
     text-decoration: none;
-    color: #ffffff;
+    color: var(--white-color);
   }
   @media screen and (min-width: 780px) {
     font-size: 14px;

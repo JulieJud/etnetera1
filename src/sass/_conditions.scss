@@ -1,13 +1,11 @@
 .conditions {
   padding: 20px 10px;
-  background-color: #f2f2f2;
+  background-color: var(--grey-section);
 }
 .conditions__title {
-  font-family: 'Open Sans';
   font-size: 36px;
   line-height: 1.2;
   font-weight: 400;
-  color: #000000;
   margin-bottom: 10px;
 
   @media screen and (max-width: 780px) {
@@ -17,11 +15,7 @@
   }
 }
 .conditions__title--who {
-  font-family: 'Open Sans';
-  font-size: 16px;
-  line-height: 1.2;
   font-weight: 400;
-  color: #000000;
   margin-bottom: 10px;
   @media screen and (max-width: 780px) {
     font-size: 14px;
@@ -33,14 +27,10 @@
   list-style: none;
 }
 .conditions__item {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .conditions__info {
-  font-family: 'Open Sans';
-  font-size: 16px;
-  line-height: 1.2;
   font-weight: 400;
-  color: #000000;
   margin-bottom: 10px;
   @media screen and (max-width: 480px) {
     font-size: 12px;
@@ -87,7 +77,7 @@
 .conditions__item--mark::before {
   content: counter(num) '. ';
   counter-increment: num;
-  color: red;
+  color: var(--orange-color);
   margin-right: 9px;
 
   position: absolute;

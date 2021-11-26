@@ -11,11 +11,11 @@ html {
 }
 
 body {
-  color: black;
+  color: var(--black-color);
 
-  font-family: sans-serif;
-  font-size: 18px;
-  line-height: 1.555;
+  font-family: var(--primary-font-family);
+  font-size: 16px;
+  line-height: 1.43;
   letter-spacing: 0.08em;
 }
 

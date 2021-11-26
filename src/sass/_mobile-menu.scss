@@ -8,9 +8,9 @@
   padding-left: 40px;
   padding-bottom: 200px;
   padding-right: 40px;
-  z-index: 100;
+  z-index: 2000;
 
-  background-color: rgba(17, 21, 24, 0.9);
+  background-color: var(--mobile-background);
   transform: translateX(300%);
   transition: transform 250ms ease-in-out;
   display: flex;
@@ -47,11 +47,11 @@
   border: none;
   border-radius: 50%;
   outline: none;
-  fill: white;
+  fill: var(--white-color);
 
   &:hover,
   &:focus {
-    fill: orange;
+    fill: var(--orange-color);
   }
 }
 
@@ -69,12 +69,17 @@
   line-height: 1.8;
 
   letter-spacing: 0.03em;
-  color: white;
+  color: var(--white-color);
 
   text-decoration: none;
 
+  &:focus,
+  &:hover {
+    color: var(--orange-color);
+  }
+
   &--current {
-    color: orange;
+    color: var(--orange-color);
   }
 }
 
