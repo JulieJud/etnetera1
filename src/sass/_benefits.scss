@@ -21,6 +21,7 @@
     justify-content:space-between;
     border-radius:5px;
     box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    background-color:var(--white-color);
     @media screen and (max-width: 767px){
         margin-bottom: 40px;
         
@@ -37,7 +38,15 @@
     flex-basis: calc((100% - 120px) / 3)
     }        
     }
+&__item:hover,
+&__item:focus{
+    background-color:var(--black-color);
+    color:var(--white-color);
+     -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+transition: background-color 500ms linear, transform 500ms ease-in-out;
 
+}
 
 &__title {
 font-weight: 700;
@@ -68,6 +77,8 @@ margin-top: 0;
 margin-bottom: 0;
 line-height: 1.2;
 font-weight: 400;
+ padding:0 20px 150px;
+    
 text-align:centre;
 @media screen and (min-width:480px) {
   padding:0 60px 150px;
