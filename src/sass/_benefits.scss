@@ -1,7 +1,8 @@
 .benefits {
-    padding:30px;    
+    padding-top:30px;    
     @media screen and (min-width:1280px) {
         padding:150px;
+        padding-bottom:30px;
     }
 
 &__list{

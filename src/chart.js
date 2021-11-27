@@ -193,6 +193,16 @@ var myBar = new Chart(ctx, {
     tooltips: {
       enabled: false,
     },
+    //title: {
+        //    display: true,
+          //  text: 'Návštěvnost firmy',
+          //   fontSize: 21,
+             //position:bottom,
+
+             
+             
+
+       // },
     responsive: true,
     barRoundness: 1,
     scales: {

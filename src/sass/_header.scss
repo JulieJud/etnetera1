@@ -5,8 +5,8 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 38px;
-  right: 20%;
+  top: 2.5%;
+  right: 10%;
 
   margin: 0;
   padding: 0;
@@ -30,7 +30,7 @@
 }
 
 .site-nav {
-  margin-right: 10px;
+  margin-right: 20px;
   @media screen and (max-width: 1279px) {
     display: none;
   }
@@ -80,13 +80,17 @@
 }
 
 .logo {
-  padding-left: 45px;
-  margin-right: 230px;
+  padding: 15px 30px;
   display: block;
   text-decoration: none;
   @media (max-width: 300px) {
     padding-left: 10px;
     margin: 0;
+  }
+    @media (min-width: 1279px) {
+    justify-content: space-around;
+     padding:0;
+     margin-left:25%;
   }
 }
 

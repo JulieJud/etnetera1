@@ -1,6 +1,10 @@
+.aboutColor{
+  background-color: var(--grey-section);
+
+}
 .about {
   padding: 40px 10px;
-  background-color: var(--grey-section);
+  
   &__title {
     font-size: 36px;
     line-height: 1.2;

@@ -1,3 +1,7 @@
+.newColor{
+  background-color: var(--orange-color);
+}
+
 .news {
   display: flex;
   padding: 18px 5px;
@@ -9,14 +13,14 @@
   font-weight: normal;
   letter-spacing: 0.005em;
   color: var(--white-color);
-  background-color: var(--orange-color);
+  
   @media screen and (min-width: 480px) {
     font-size: 12px;
     padding: 18px 20px;
   }
   @media screen and (min-width: 780px) {
     font-size: 12px;
-    padding: 18px 30px;
+    padding: 18px 10px;
   }
   @media screen and (min-width: 1280px) {
     font-size: 15px;

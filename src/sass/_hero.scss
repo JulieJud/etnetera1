@@ -1,12 +1,14 @@
 .hero {
-  position: relative;
-  background-color: #f2f2f2;
+  //position: relative;
   padding: 0;
-  opacity: 0.8;
+  
+ 
 }
 .hero__picture {
+  position:relative;
+  
   background-image: url(../images/hero1@1X.png);
-
+  background-color: #f2f2f2;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -14,7 +16,7 @@
   min-height: 170px;
   filter: grayscale(100%);
 
-  z-index: -1;
+  z-index: -4;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/hero1@2X.png);
@@ -34,41 +36,47 @@
   position: absolute;
   z-index: 100;
   top: 7px;
-  left: 10px;
+  left: 20%;
   right: 0;
   bottom: 0;
-  font-family: 'Open Sans';
   font-size: 15px;
   line-height: 1.2;
   font-weight: 400;
-  color: #000000;
+  color:black;
+   @media screen and (min-width: 280px) {
+     left: 5%;
+     right:2%;
+
+    
+  }
   @media screen and (min-width: 480px) {
     top: 20px;
-    left: 40px;
+    
     font-size: 24px;
   }
 
   @media screen and (min-width: 780px) {
     font-size: 33px;
     top: 60px;
+     
+    
   }
 
   @media screen and (min-width: 1280px) {
     font-size: 48px;
     top: 99px;
-    left: 211px;
+    
   }
 }
 
 .hero__button {
   position: absolute;
-  font-family: 'Open Sans';
   font-size: 12px;
   line-height: 1.2;
   font-weight: 400;
   color: #e84d0f;
   left: 32%;
-  bottom: 3%;
+  bottom:10%;
   width: 100px;
   height: 30px;
   background-color: #ffffff;
@@ -78,11 +86,13 @@
   @media screen and (min-width: 480px) {
     width: 150px;
     left: 37%;
+    
   }
   @media screen and (min-width: 780px) {
     width: 200px;
     height: 35px;
     left: 65%;
+  
   }
   @media screen and (min-width: 1280px) {
     font-size: 16px;
@@ -91,7 +101,7 @@
     color: #e84d0f;
     left: 900px;
     right: 50px;
-    bottom: 200px;
+   
     width: 237px;
     height: 46px;
   }
@@ -105,26 +115,31 @@
   overflow: hidden;
   position: absolute;
   top: 45px;
-  left: 20px;
-  right: 10px;
+  left: 20%;
+  right: 20%;
   z-index: 100;
-
+ @media screen and (min-width: 280px) {
+    top: 45px;
+     left: 5%;
+  right: 5%; 
+ }
   @media screen and (min-width: 480px) {
     top: 70px;
-    left: 40px;
-    right: 40px;
+     left: 5%;
+  right: 5%;
   }
   @media screen and (min-width: 780px) {
     top: 150px;
-    left: 70px;
-    right: 70px;
+   
   }
   @media screen and (min-width: 1280px) {
-    top: 217px;
-    left: 209px;
-    right: 503px;
+  left: 20%;
+  right: 20%;
+  top: 250px;
+    
   }
 }
+
 .embla__container {
   display: flex;
 }
@@ -152,35 +167,37 @@
     line-height: 24px;
   }
 }
-
+.heroRelativ{
+  position:relative;
+}
 .embla__button {
   outline: 0;
   cursor: pointer;
   background-color: transparent;
   touch-action: manipulation;
-  position: absolute;
+ position: absolute;
   z-index: 400;
-  top: 71%;
+  bottom: 13%;
   transform: translateY(-50%);
   border: 0;
-  width: 10px;
-  height: 10px;
-  justify-content: center;
-  align-items: center;
+  width: 15px;
+  height: 15px;
   fill: orange;
   padding: 0;
   @media screen and (min-width: 480px) {
     width: 20px;
     height: 20px;
+    bottom: 20%;
   }
   @media screen and (min-width: 780px) {
     width: 30px;
     height: 30px;
+    bottom: 25%;
   }
   @media screen and (min-width: 1280px) {
-    width: 40px;
-    height: 40px;
-    top: 50%;
+    width: 60px;
+    height: 60px;
+    top: 45%;
   }
 }
 .embla__button:disabled {
@@ -194,28 +211,27 @@
 }
 
 .embla__prev {
-  left: 77px;
+  left: 10%;
   @media screen and (min-width: 480px) {
-    left: 177px;
+    
   }
   @media screen and (min-width: 780px) {
-    left: 277px;
+    
   }
   @media screen and (min-width: 1280px) {
-    left: 27px;
+   
   }
 }
 
 .embla__next {
-  right: 77px;
+  right:10%;
 
   @media screen and (min-width: 480px) {
-    right: 177px;
+ 
   }
   @media screen and (min-width: 780px) {
-    right: 277px;
+    
   }
   @media screen and (min-width: 1280px) {
-    right: 27px;
   }
 }
