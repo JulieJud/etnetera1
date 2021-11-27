@@ -6,7 +6,7 @@
   justify-content: center;
   position: absolute;
   top: 38px;
-  right: 15%;
+  right: 20%;
 
   margin: 0;
   padding: 0;
@@ -24,14 +24,14 @@
     right: 2%;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1280px) {
     display: none;
   }
 }
 
 .site-nav {
   margin-right: 10px;
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1279px) {
     display: none;
   }
 
@@ -101,7 +101,7 @@
     justify-content: flex-start;
   }
 
-  @media (min-width: 1199px) {
+  @media (min-width: 1279px) {
     justify-content: space-between;
   }
 }
